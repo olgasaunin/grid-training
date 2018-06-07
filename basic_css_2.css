@@ -51,3 +51,56 @@
     grid-column: 4 / span 2;
     grid-row: 2 / span 3;
 }
+
+.wrapper2 {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 
+        [firstpanel] 100px 
+        [secondpanel] 200px 
+        [thirdpanel] 100px
+        [endpanel];
+
+    grid-template-rows:
+        [firstrow] 100px
+        [secondrow] 100px
+        [thirdrow] 100px
+        [fourthrow] 100px
+        [endrow];      
+  }
+
+.aa {
+    grid-column: firstpanel / endpanel;
+    grid-row: firstrow;
+    background-color: orange;
+}
+
+.ba {
+    grid-column: firstpanel / thirdpanel;
+    grid-row: secondrow;
+    background-color: pink;
+}
+
+.ca {
+    grid-column: thirdpanel /endpanel;
+    grid-row: secondrow /fourthrow;
+    background-color: palegreen;
+}
+
+.da {
+    grid-column: firstpanel / secondpanel;
+    grid-row: thirdrow / fourthrow;
+    background-color: azure;
+}
+
+.ea {
+    grid-column: secondpanel / thirdpanel;
+    grid-row: thirdrow / fourthrow;
+    background-color: turquoise;
+}
+
+.fa {
+    grid-column: firstpanel / endpanel;
+    grid-row:  fourthrow / endrow;
+    background-color: yellow;
+} 
